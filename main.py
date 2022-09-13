@@ -1,5 +1,5 @@
 from turtle import _Screen, Screen
-from lib.snake import Snake
+from snake import Snake
 import time
 
 
