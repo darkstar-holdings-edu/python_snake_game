@@ -18,7 +18,7 @@ The things you need before installing the software.
 - [pipenv](https://pipenv.pypa.io/en/latest/index.html) [^1]
 - tkinter
 
-[^1]: Note: I use `pipenv` becaue I like the combination of the `venv` and `pip` commands together. However, I know it's not for everyone. So I've created a `requirements.txt` file if you don't like `pipenv` and just want to use `pip` instead.
+[^1]: Note: I use `pipenv` because I like the combination of the `venv` and `pip` commands together. However, I know it's not for everyone. So I've created a `requirements.txt` file if you don't like `pipenv` and just want to use `pip` instead.
 
 ### Installation
 
@@ -30,6 +30,10 @@ pipenv shell
 ## Usage
 
 - `main.py`: Executable to launch the game.
+
+## External Documentation Used
+
+- [turtle](https://docs.python.org/3/library/turtle.html)
 
 ## License
 
