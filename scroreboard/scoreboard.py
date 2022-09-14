@@ -23,12 +23,18 @@ class Scoreboard(Turtle):
         )
 
     def update_score(self) -> None:
-        """Adds a point to the score and updates the score data on the screen."""
+        """Adds a point to the score and updates the score data
+        on the screen."""
         self.score += 1
         self.write_score()
 
     def game_over(self) -> None:
         """Displays the \"Game Over\" message."""
         self.setposition(0, 0)
-        self.write("GAME OVER!", False, align="center", font=("Courier", 20, "bold"))
+        self.write(
+            "GAME OVER!",
+            False,
+            align="center",
+            font=("Courier", 20, "bold"),
+        )
         pass
