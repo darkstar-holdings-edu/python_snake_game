@@ -28,15 +28,22 @@ class Snake:
 
     def __init__(self) -> None:
         for i in range(3):
-            segment = Turtle(shape="square")
-            segment.penup()
-            segment.color("white")
-            segment.setx(i * -20)
-            segment.speed(0)
-
-            self.segments.append(segment)
+            self.add_segment((i * -20, 0))
 
         self.head_segment = self.segments[0]
+
+    def add_segment(self, position: tuple[int, int]) -> None:
+        segment = Turtle(shape="square")
+        segment.penup()
+        segment.color("white")
+        segment.speed("fastest")
+        segment.setposition(position)
+        segment.speed(0)
+
+        self.segments.append(segment)
+
+    def extend(self):
+        self.add_segment(self.segments[-1].position())
 
     def move(self) -> None:
         """Moves the snake forward one move."""
