@@ -13,6 +13,7 @@ class Scoreboard(Turtle):
         self.write_score()
 
     def write_score(self) -> None:
+        """Writes score data to the screen."""
         self.clear()
         self.write(
             f"Score: {self.score}",
@@ -22,10 +23,12 @@ class Scoreboard(Turtle):
         )
 
     def update_score(self) -> None:
+        """Adds a point to the score and updates the score data on the screen."""
         self.score += 1
         self.write_score()
 
     def game_over(self) -> None:
+        """Displays the \"Game Over\" message."""
         self.setposition(0, 0)
         self.write("GAME OVER!", False, align="center", font=("Courier", 20, "bold"))
         pass

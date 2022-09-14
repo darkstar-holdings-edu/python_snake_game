@@ -33,6 +33,7 @@ class Snake:
         self.head_segment = self.segments[0]
 
     def add_segment(self, position: tuple[int, int]) -> None:
+        """Adds a segment to the snake"""
         segment = Turtle(shape="square")
         segment.penup()
         segment.color("white")
@@ -43,6 +44,7 @@ class Snake:
         self.segments.append(segment)
 
     def extend(self):
+        """Extends the snake (used for extending the snake during the game)."""
         self.add_segment(self.segments[-1].position())
 
     def move(self) -> None:
