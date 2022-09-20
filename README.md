@@ -2,7 +2,7 @@
 
 This is repo contains code that I generate while working on the [100 Days of Code](https://www.udemy.com/course/100-days-of-code/) udemy course for learning Python.
 
-This repo covers the project for days 20 and 21 of the course.
+This repo covers the project for days 20, 21, and part of 24 of the course.
 
 ![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/darkstar-holdings-edu/python_snake_game)
 ![GitHub](https://img.shields.io/github/license/darkstar-holdings-edu/python_snake_game)

@@ -27,6 +27,9 @@ class Snake:
     head_segment: Turtle
 
     def __init__(self) -> None:
+        self.create()
+
+    def create(self) -> None:
         for i in range(3):
             self.add_segment((i * -20, 0))
 
@@ -43,9 +46,16 @@ class Snake:
 
         self.segments.append(segment)
 
-    def extend(self):
+    def extend(self) -> None:
         """Extends the snake (used for extending the snake during the game)."""
         self.add_segment(self.segments[-1].position())
+
+    def reset(self) -> None:
+        for segment in self.segments:
+            segment.setposition(1000, 1000)
+
+        self.segments.clear()
+        self.create()
 
     def move(self) -> None:
         """Moves the snake forward one move."""

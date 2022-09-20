@@ -45,13 +45,15 @@ def main() -> None:
             or snake.head_segment.ycor() > 490
             or snake.head_segment.ycor() < -490
         ):
-            game_running = False
+            scoreboard.reset()
+            snake.reset()
 
         for segment in snake.segments[1:]:
             if snake.head_segment.distance(segment) < 10:
-                game_running = False
+                scoreboard.reset()
+                snake.reset()
 
-    scoreboard.game_over()
+    # scoreboard.reset()
     screen.exitonclick()
 
 
